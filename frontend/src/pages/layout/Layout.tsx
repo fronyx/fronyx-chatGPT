@@ -73,7 +73,7 @@ const Layout = () => {
                 // className={styles.headerContainer}
                 >
                     <Stack horizontal verticalAlign="center">
-                      <Link to="https://fronyx.io/" className={styles.headerTitleContainer}>
+                      <Link to="https://fronyx.io/" className={styles.headferTitleContainer}>
                         <img
                           src="https://s3.eu-central-1.amazonaws.com/fronyx.assets/fronyx-logo.JPG"
                           className={styles.headerIcon}

@@ -575,12 +575,11 @@ const Chat = () => {
                         {!messages || messages.length < 1 ? (
                             <Stack className={styles.chatEmptyState}>
                                 <img
-                                  src="https://s3.eu-central-1.amazonaws.com/fronyx.assets/chargegpt-logo.png"
+                                  src="https://s3.eu-central-1.amazonaws.com/fronyx.assets/fronyx-chargeint-logo.png"
                                   className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                              <h1 className={styles.chatEmptyStateTitle}>Start chatting</h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>This chatbot helps you to understand your EV drivers better.</h2>
+                                <h3 className={styles.chatEmptyStateTitle}>This chatbot helps you to understand your EV drivers better.</h3>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
@@ -650,7 +649,7 @@ const Chat = () => {
                                         },
                                         root: {
                                             color: '#FFFFFF',
-                                            background: "radial-gradient(109.81% 107.82% at 100.1% 90.19%, #0F6CBD 33.63%, #2D87C3 70.31%, #8DDDD8 100%)"
+                                            background: '#FD9103'
                                         },
                                         rootDisabled: {
                                             background: "#BDBDBD"
@@ -670,7 +669,7 @@ const Chat = () => {
                                         },
                                         root: {
                                             color: '#FFFFFF',
-                                            background: disabledButton() ? "#BDBDBD" : "radial-gradient(109.81% 107.82% at 100.1% 90.19%, #0F6CBD 33.63%, #2D87C3 70.31%, #8DDDD8 100%)",
+                                            background: disabledButton() ? "#BDBDBD" : "#FD9103",
                                             cursor: disabledButton() ? "" : "pointer"
                                         },
                                     }}
