@@ -73,14 +73,13 @@ const Layout = () => {
                 // className={styles.headerContainer}
                 >
                     <Stack horizontal verticalAlign="center">
+                      <Link to="https://fronyx.io/" className={styles.headerTitleContainer}>
                         <img
-                            src={Azure}
-                            className={styles.headerIcon}
-                            aria-hidden="true"
+                          src="https://s3.eu-central-1.amazonaws.com/fronyx.assets/fronyx-logo.JPG"
+                          className={styles.headerIcon}
+                          aria-hidden="true"
                         />
-                        <Link to="/" className={styles.headerTitleContainer}>
-                            <h1 className={styles.headerTitle}>Azure AI</h1>
-                        </Link>
+                      </Link>
                     </Stack>
                     <Stack horizontal tokens={{ childrenGap: 4 }}>
                             {(appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured) && 
