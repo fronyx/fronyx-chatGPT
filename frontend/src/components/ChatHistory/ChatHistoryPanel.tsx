@@ -21,7 +21,7 @@ const commandBarStyle: ICommandBarStyles = {
         padding: '0',
         display: 'flex',
         justifyContent: 'center',
-        backgroundColor: 'transparent'
+        backgroundColor: '#FFFFFF'
     },
 };
 
@@ -93,7 +93,7 @@ export function ChatHistoryPanel(props: ChatHistoryPanelProps) {
                 <Stack verticalAlign="start">
                     <Stack horizontal styles={commandBarButtonStyle}>
                         <CommandBarButton
-                            iconProps={{ iconName: 'More' }}
+                            iconProps={{ iconName: 'More', styles: { root: { color: '#000045' } } }}
                             title={"Clear all chat history"}
                             onClick={onShowContextualMenu}
                             aria-label={"clear all chat history"}
@@ -109,7 +109,7 @@ export function ChatHistoryPanel(props: ChatHistoryPanelProps) {
                             onDismiss={onHideContextualMenu}
                         />
                         <CommandBarButton
-                            iconProps={{ iconName: 'Cancel' }}
+                            iconProps={{ iconName: 'Cancel', styles: { root: { color: '#000045' } } }}
                             title={"Hide"}
                             onClick={handleHistoryClick}
                             aria-label={"hide button"}
@@ -179,7 +179,7 @@ export function ChatHistoryPanel(props: ChatHistoryPanelProps) {
                 modalProps={modalProps}
             >
                 <DialogFooter>
-                {!clearingError && <PrimaryButton onClick={onClearAllChatHistory} disabled={clearing} text="Clear All" />}
+                {!clearingError && <PrimaryButton style={{ backgroundColor: '#FD9103' }} onClick={onClearAllChatHistory} disabled={clearing} text="Clear All" />}
                 <DefaultButton onClick={onHideClearAllDialog} disabled={clearing} text={!clearingError ? "Cancel" : "Close"} />
                 </DialogFooter>
             </Dialog>
