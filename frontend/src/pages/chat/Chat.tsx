@@ -575,11 +575,11 @@ const Chat = () => {
                         {!messages || messages.length < 1 ? (
                             <Stack className={styles.chatEmptyState}>
                                 <img
-                                  src="https://s3.eu-central-1.amazonaws.com/fronyx.assets/fronyx-chargeint-logo.png"
+                                  src="https://s3.eu-central-1.amazonaws.com/fronyx.assets/fronyx-internal-chatgpt-logo.png"
                                   className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h3 className={styles.chatEmptyStateTitle}>This chatbot helps you to understand your EV drivers better.</h3>
+                                <h3 className={styles.chatEmptyStateTitle}>This fronyx internal chatbot has access to many fronyx data and files.</h3>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
